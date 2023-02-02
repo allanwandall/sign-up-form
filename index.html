@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="left">
+        <div class="logo-container">
+            <img src="img/cogleaf-white.png" alt="" class="logo"/>
+            <div class="hero-container">
+                <h1 class="hero-top">ALLAN</h1>
+                <h1 class="hero-bottom">WANDALL</h1>
+            </div>
+        </div>
+        <p class="img-ref">
+            Photo by <a href="https://unsplash.com/@npi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pavel Neznanov</a> on <a href="https://unsplash.com/photos/w95Fb7EEcjE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+    </div>
+    <div class="right">
+        <h2 class="top-text">This is just some placeholder text. I would put some interesting text here to catch your attention and sign up, however this will have to suffice for now.</h2>
+        <h2 class="top-text catchphrase"><em>Please</em> consider signing up anyway.</h2>
+        <div class="form-container">
+            <h2 class="form-headline">Let's do this!</h2>
+            <form action="" id="myform" method="post" onSubmit = "return checkPassword(this)" class="signup-form">
+                <div class="form-column">
+                    <div class="form-input">
+                        <label for='first-name'>FIRST NAME</label>
+                        <input id='first-name' name='first-name' type='text'/>
+                        <p id="first-name-p" class="input-correction"></p>
+                    </div>
+                    <div class="form-input">
+                        <label for='email'>EMAIL</label>
+                        <input id='email' name='email' type='email' placeholder="john@example.com"/>
+                        <p id="email-p" class="input-correction"></p>
+                    </div>
+                    <div class="form-input">
+                        <label for='password'>PASSWORD</label>
+                        <input id='password' name='password' type='password'/>
+                        <p id="password-p" class="input-correction"></p>
+                    </div>        
+                </div>
+                <div class="form-column">
+                    <div class="form-input"> 
+                        <label for='last-name'>LAST NAME</label>
+                        <input id='last-name' name='last-name' type='text'/>
+                        <p id="last-name-p" class="input-correction"></p>
+                    </div>
+                    <div class="form-input">
+                        <label for='phone'>PHONE NUMBER</label>
+                        <input id='phone' name='phone' type='number'/>
+                        <p id="phone-p" class="input-correction"></p>
+                    </div>
+                    <div class="form-input">
+                        <label for='rptpassword'>REPEAT PASSWORD</label>
+                        <input id='rptpassword' name='rptpassword' type='password'/>
+                        <p id="rptpassword-p" class="input-correction"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <button class="create-btn">Create Account</button>
+        <p class="login">Already have an account? <a href="" class="login-link">Log in</a></p>
+    </div>
+</body>
+</html>
